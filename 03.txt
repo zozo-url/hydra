@@ -1,0 +1,15 @@
+kaleid + contrast + noise
+
+osc(60.088, 0.125, 3.743)
+  .kaleid(10)
+  .color(-2, 19.488, -4)
+.contrast( ({time}) => Math.sin(time) * 0.7 )
+  .modulate(o0, mouse.x * 0.0002)
+  .rotate(0, 0.22)
+  .out(o0)
+
+noise(20)
+  .rotate(8,0.1)
+  .kaleid(2)
+  .mult(o0)
+  .out(o1)
