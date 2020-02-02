@@ -1,0 +1,11 @@
+screen capture + web cam + add + mult + render + float values for osc
+
+s0.initScreen(0)
+s0.initCam(1)
+src(s0).add(o0).modulate(o1, () => mouse.x/10).out(o2)
+src(s1).modulate(o1, () => mouse.y).mult(o2).out(o0)
+
+osc(0.3).out(o1)
+render(o0)
+
+osc(3).add(noise(3)).out(o3)
