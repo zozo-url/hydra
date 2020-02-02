@@ -1,0 +1,27 @@
+audio + conditional statements + functions
+
+a.show()
+a.hide()
+a.show()
+audioFunction = (val1,val2,arg1) => {
+        if(a.fft[0] > arg1) return val1
+        else
+        return val2
+      }
+noise(3)
+  .add(noise(()=>audioFunction(12,8,0.4))
+       .color(()=>audioFunction(3,5,0.4),4,5))
+	.scale(()=>audioFunction(20,3,0.2))
+.color(a.fft[0])
+.modulate(o1)
+  .out(o0)
+
+osc(2).pixelate(()=>audioFunction(8,50,0.3),50).out(o1)
+
+
+a.setSmooth(0.3)
+a.setCutoff(6)
+a.setScale(4)
+a.setBins(5)
+a.settings[0].cutoff = 2
+a.settings[0].scale = 4
