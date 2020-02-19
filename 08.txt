@@ -1,0 +1,8 @@
+blend + pixelate
+
+osc(20).blend(noise()
+.pixelate([3,4,6,7]),[2,5])
+.modulate(o0,[0.02,0.4, 0.2,5])
+.scrollY(({time}) => time/20)
+.add(o0)
+.out(o0)
