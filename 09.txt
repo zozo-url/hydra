@@ -1,0 +1,12 @@
+luma + scale + blend
+
+osc(2).blend(noise()
+.pixelate([3,4,6,7],[2,5,5])
+.modulate(o0,[0.02,0.4, 0.09,5])
+.scrollY(({time})=>Math.cos(time)*0.005))
+.color([3,4,2,1],[2,1],6)
+.luma([0.6,-2,0.2])
+.scale(0.8)
+.add(o0)
+.mult(o1)
+.out(o0)
