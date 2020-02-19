@@ -28,9 +28,14 @@ const audioFunc = (val1,val2,arg1) => {
         else
         return val2
       }
-> GENERATE ARRAY OF ASCENDING NUMBERS 
-const genArr = (al) => {
+> GENERATE ARRAY OF ASCENDING or RANDOM NUMBERS 
+const genArr = (al, rand,num) => {
   return Array(al).fill().map((x, i) => {
+  if (!rand){
   return i+1
+  }
+  if (rand) {
+  return Math.floor(Math.random()*num) + 1
+  }
   })
 }
