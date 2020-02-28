@@ -1,0 +1,12 @@
+VIDEO
+
+const vid = document.createElement("video");
+vid.autoplay = true
+vid.loop = true
+vid.src = "testvid.ogv"
+
+s2.init({
+src: vid,
+dynamic: true
+})
+src(s2).out(o1)
