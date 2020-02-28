@@ -39,3 +39,18 @@ const genArr = (al, rand,num) => {
   }
   })
 }
+
+SHORTCUT FOR AUDIO FX
+var x = (n)=>a.fft[0] * n;
+
+VIDEO SET UP FUNC
+var mv = (f, s) => {
+var v = document.createElement("video")
+v.autoplay = true
+v.loop = true
+v.src = f
+s.init({
+src: v,
+dynamic: true
+})
+}
